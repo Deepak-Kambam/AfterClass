@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Base configuration: Prohibit cleartext by default -->
+    <base-config cleartextTrafficPermitted="false" />
+
+    <!-- Debug development override: Permit cleartext only for the local Android emulator loopback bridge -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>

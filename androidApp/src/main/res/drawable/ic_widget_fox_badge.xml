@@ -1,0 +1,52 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+
+    <!-- Glowing outer aura -->
+    <path
+        android:fillColor="#1AFFFFFF"
+        android:pathData="M40,10 C46,10 58,16 66,24 C72,32 74,44 70,54 C66,64 54,72 40,72 C26,72 14,64 10,54 C6,44 8,32 14,24 C22,16 34,10 40,10 Z" />
+
+    <!-- Fox Outer Head Contour -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#0D0D10"
+        android:pathData="M40,24
+                          L48,15 L58,26 L53,38
+                          L65,48 L56,52 L40,66
+                          L24,52 L15,48 L27,38
+                          L22,26 L32,15 Z" />
+
+    <!-- Inner Ear Highlights -->
+    <path
+        android:fillColor="#E6FFFFFF"
+        android:pathData="M33,19 L25,27 L32,32 Z" />
+    <path
+        android:fillColor="#E6FFFFFF"
+        android:pathData="M47,19 L48,32 L55,27 Z" />
+
+    <!-- Fox Glowing Slanted Eyes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M29,42 C31,40 35,42 35,43 C35,44 32,45 29,44 C28,43 28,42 29,42 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M51,42 C49,40 45,42 45,43 C45,44 48,45 51,44 C52,43 52,42 51,42 Z" />
+
+    <!-- Cheek & Muzzle White Fur Accents -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.4"
+        android:strokeLineCap="round"
+        android:pathData="M24,51 L31,56 L40,65 L49,56 L56,51" />
+
+    <!-- Cute Nose Point -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38.5,58 L41.5,58 L40,60 Z" />
+</vector>

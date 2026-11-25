@@ -1,0 +1,15 @@
+{
+  "latestVersionCode": 3,
+  "latestVersionName": "1.0.2",
+  "apkUrl": "https://api.afterclass.bond/updates/AfterClass.apk",
+  "releaseNotes": [
+    "Compact streamlined bottom navigation bar",
+    "Enhanced group list and messaging layouts",
+    "Optimized and concise signed release build"
+  ],
+  "forceUpdate": false,
+  "minimumSupportedVersionCode": 1,
+  "downloadUrl": "https://api.afterclass.bond/updates/AfterClass.apk",
+  "apkSha256": "fe3d01901b54da6343ef6e20b38d0a49e18c4c1e024c7e7f8a512b8adc0567e9",
+  "signature": "MEUCID0gEhueonMDD1ITBA4dsh94K+kOtLKt/9qqwuVlzdaSAiEAra5YFVJQZ9bQiGLit17lYjYEywPnVU8ID7rDfOCwGpY="
+}

@@ -1,0 +1,31 @@
+# Baseline Profile for AfterClass
+# Critical Path: Startup -> Splash -> Rooms Screen -> Chat Screen -> Message Delivery
+
+HSPLorg/example/annochat/MainActivity;->onCreate(Landroid/os/Bundle;)V
+HSPLorg/example/annochat/MainActivity;-><init>()V
+
+# App Composable Entry & Navigation
+HSPLorg/example/annochat/AppKt;->App(Lorg/example/annochat/network/NetworkConfig;Lorg/example/annochat/data/session/SessionStorage;Lorg/example/annochat/network/EndpointDiscoveryService;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V
+HSPLorg/example/annochat/presentation/theme/AnonChatThemeKt;->AnonChatTheme(Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
+HSPLorg/example/annochat/presentation/designsystem/AnonChatColors;-><clinit>()V
+HSPLorg/example/annochat/presentation/designsystem/AnonChatTypography;-><clinit>()V
+
+# Repositories & Data Layer
+HSPLorg/example/annochat/data/repository/ChatRepositoryImpl;-><init>(Lorg/example/annochat/network/ApiClient;Lorg/example/annochat/network/WebSocketClient;Lorg/example/annochat/data/session/SessionStorage;Lorg/example/annochat/network/EndpointDiscoveryService;Lkotlinx/coroutines/CoroutineScope;)V
+HSPLorg/example/annochat/data/session/AndroidSessionStorage;-><init>(Landroid/content/Context;)V
+HSPLorg/example/annochat/data/session/SessionStorage$Companion;->generateAnonymousSessionId()Ljava/lang/String;
+HSPLorg/example/annochat/network/ApiClient;-><init>(Lorg/example/annochat/network/NetworkConfig;Lio/ktor/client/HttpClient;)V
+HSPLorg/example/annochat/network/WebSocketClient;-><init>(Lorg/example/annochat/network/NetworkConfig;Lio/ktor/client/HttpClient;Lkotlin/jvm/functions/Function1;Lkotlinx/coroutines/CoroutineScope;)V
+
+# ViewModels
+HSPLorg/example/annochat/presentation/viewmodel/RoomsViewModel;-><init>(Lorg/example/annochat/data/repository/ChatRepository;Lorg/example/annochat/data/session/SessionStorage;Lkotlinx/coroutines/CoroutineScope;)V
+HSPLorg/example/annochat/presentation/viewmodel/ChatViewModel;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/example/annochat/data/repository/ChatRepository;Lorg/example/annochat/data/session/SessionStorage;Lkotlinx/coroutines/CoroutineScope;)V
+
+# Screens & Components Rendering
+HSPLorg/example/annochat/presentation/screens/SplashScreenKt;->SplashScreen(Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V
+HSPLorg/example/annochat/presentation/screens/RoomsScreenKt;->RoomsScreen(Lorg/example/annochat/presentation/viewmodel/RoomsViewModel;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
+HSPLorg/example/annochat/presentation/screens/ChatScreenKt;->ChatScreen(Lorg/example/annochat/presentation/viewmodel/ChatViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V
+HSPLorg/example/annochat/presentation/components/MessageBubbleKt;->MessageBubble(Lorg/example/annochat/data/model/MessageDto;ZLorg/example/annochat/data/repository/ChatRepository;ZZLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V
+HSPLorg/example/annochat/presentation/components/AnimalAvatarKt;->AnimalAvatar(Ljava/lang/String;Ljava/lang/String;Lorg/example/annochat/data/repository/ChatRepository;Landroidx/compose/ui/Modifier;FZZLandroidx/compose/runtime/Composer;II)V
+HSPLorg/example/annochat/presentation/components/ImageBitmapCache;->get(Ljava/lang/String;)Landroidx/compose/ui/graphics/ImageBitmap;
+HSPLorg/example/annochat/presentation/components/ImageBitmapCache;->put(Ljava/lang/String;Landroidx/compose/ui/graphics/ImageBitmap;)V

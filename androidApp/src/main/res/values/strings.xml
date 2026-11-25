@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AfterClass</string>
+    <string name="widget_time_vibe_label">Time &amp; Vibe</string>
+    <string name="widget_time_vibe_desc">Real-time clock with rotating nocturnal quotes</string>
+    <string name="widget_live_activity_label">Streak &amp; Motivation</string>
+    <string name="widget_live_activity_desc">Campus streak tracker and nocturnal motivation card</string>
+    <string name="widget_identity_label">Your Identity</string>
+    <string name="widget_identity_desc">Anonymous persona badge and tag</string>
+</resources>
